@@ -1,0 +1,206 @@
+* {
+  box-sizing: border-box
+}
+.topnav {
+  background-color: white;
+  display: flex;
+  justify-content: flex-end;
+  height: 38px;
+}
+
+.topnav a {
+  color: black;
+  text-align: center;
+  padding: 0px 5px;
+  font-size: 28px;
+  text-decoration: none;
+  border-bottom: 4px solid white;
+  transition-duration: 0.5s;
+  font-weight: 200;
+  font-family: 'Lato';
+}
+
+.topnav a:hover {
+  color: black;
+  border-bottom: 4px solid yellow;
+}
+
+#user {
+  width: 20px;
+  height: 23px;
+  margin: 0px 0px;
+}
+
+.main {
+  width: 100%;
+  height: 1200px;
+  background-image: url('mountains.jpg');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+.story {
+  width: 900px;
+  height: 1000px;
+  margin: 100px 0px;
+  justify-content: center;
+  border: 1px solid black;
+  display: flex;
+}
+
+.title {
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  text-shadow: 3px 3px black;
+  color: white;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  height: 175px;
+}
+
+.h4 {
+  font-family: 'Anton', sans-serif;
+  text-shadow: 3px 3px white;
+  color: black;
+  text-align: center;
+  margin: 2px 2px;
+  font-size: 90px
+}
+.czech{
+  width: 100%;
+  height: 95%;
+  background-image: url('czech_pic.jpg');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.hungary{
+  width: 100%;
+  height: 95%;
+  background-image: url('hungary_pic.jpg');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+.small_picture {
+  float: left;
+  width: 145px;
+  height: 145px;
+  border-radius: 10px;
+}
+
+.p {
+  color: black;
+  font-weight: 700;
+  padding: 0px 10px;
+  margin: 2px 2px;
+  text-shadow: 2px 2px white;
+  font-size:20px;
+}
+
+.slideshow {
+  width: 100%;
+  height: 1000px;
+}
+* {box-sizing: border-box}
+
+
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+#cart{
+  padding:16px;
+  border: 15px solid gray;
+  width: 900px;
+  height: 90px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 5px;
+  font-family: 'Lato';
+}
+#cart > select,
+#cart > input,
+#cart > output{
+  width:75px;
+  margin-right: 16px;
+  border-radius: 5px;
+}
+output{
+  width:100px;
+  font-weight: 700;
+}
+button {
+   height: 75px;
+   width: 90px;
+   margin: 0 auto;
+}

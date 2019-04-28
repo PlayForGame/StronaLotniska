@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+</head>
+
+<body>
+    <div class="topnav">
+        <nav>
+            <a href="index.html">Flights</a>
+            <a href="#news">Tickets</a>
+            <a href="signup.html"><img id="user" src="user_icon.png"></a>
+            <a href="#about">About</a>
+        </nav>
+    </div>
+    <section class="main">
+        <div class="story">
+            <form id="cart" class="row" oninput="calculate()">
+                Options:
+                <select name="option" id="option">
+                    <option value="99.99">państwo1</option>
+                    <option value="100.99">państwo2</option>
+                    <option value="145.99">państwo3</option>
+                </select>
+                Ilość miesięcy: <input id="time" type="number" value="12" min="0">
+                Ilość lat: <input id="old" type="number" value="19" min="1" max="99">
+                Do zapłaty: <output id="result" name="out" for="option time"></output>
+                <input type="submit" value="Submit" class="button">
+            </form>
+    </section>
+    <script>
+        function calculate() {
+            let doc = document;
+            let option = doc.getElementById("option");
+            let time = doc.getElementById("time");
+            let result = doc.getElementById("result");
+            let old = doc.getElementById("old");
+
+            result.value = "$" + Number(parseFloat(option.value) * parseInt(time.value) - (parseFloat(option.value) * parseInt(time.value) * (parseInt(old.value) * 0.01)))
+                .toPrecision(5);
+        }
+    </script>
+    </div>
+    </section>
+</body>
+
+</html>
